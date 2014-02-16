@@ -7,21 +7,20 @@
 html, body {
 	height: 100%;
 	margin: 0;
-   	padding: 0;
+	padding: 0;
 }
 body {
 	padding-bottom: 60px; /* Height of the footer */
 	color: #FFFFFF;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	background-color: #2c1d0a;
+	background-color: #140d05;
 }
 #container {
 	background-color: #2c1d0a;
 	width: 100%;
-   	min-height:100%;
-   	position: relative;
+	min-height: 100%;
+	position: relative; 
 }
-
 #hero img {
 	border-top: 2px solid #4c3211;
 	border-bottom: 66px solid #4c3211;   /* Height of the footer+padding */
@@ -41,17 +40,6 @@ h1 {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-#homeheader {
-	position: absolute;
-	text-align: center;
-	margin: auto;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 155px;
-	width 100%;
-	z-index: 100;
-}
 h2 {
 	text-align: center;
 	text-transform: uppercase;
@@ -59,11 +47,6 @@ h2 {
 #main {
 	width: 58%;
 	margin-left: 2%;
-	float: left;
-}
-#sidebar {
-	width: 34%;
-	margin-left: 4%;
 	float: left;
 }
 #body {
@@ -104,6 +87,7 @@ footer {
 	margin-left: 10px;
 	float: right;
 }
+
 a {
 	font-weight: bold;
 	text-decoration: none;
@@ -167,4 +151,80 @@ a:hover, a:active, a:focus {
 }
 article, aside, figure, footer, header, nav {
 	display: block;
+}
+
+
+/* Blur Effect */
+.blur {
+	width:367; 
+	height:459px;
+	filter: blur(3px); 
+	-webkit-filter: 
+	blur(3px); 
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px); 
+	-ms-filter: blur(3px);
+	filter: url(blur.svg#blur);
+	clip: rect(2px,365px,457px,2px); /* ??? */
+}
+blur:focus { 
+	filter: none; 
+	-webkit-filter: blur(0px); 
+	-moz-filter: blur(0px); 
+	-ms-filter: blur(0px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); 
+}
+
+
+/* Frosted Glass Effect */
+.glass {
+	position: fixed;
+	top: 120px;
+	width: 100%;
+	z-index: 100;
+	border-bottom: 1px solid;
+	border-bottom-color: #ccc;
+	border-bottom-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.glass::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	content: "";
+	filter: url("data:image/svg+xml,(SVG Filter Data URI)#blur");
+	-webkit-filter: blur(5px);
+	filter: blur(5px); 
+}
+.glass .legacy-ie-fix {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=20)";
+}
+.glass h1 {
+	position: relative;
+	margin: 0;
+	color: #fff;
+	color: rgba(126, 36, 143, 0.65);
+	font-size: 120px;
+	font-weight: normal;
+	/*font-family: "Megrim", sans-serif;*/
+	font-family: "Walkway_SemiBold", "Calibri Light";
+	line-height: 1.2;
+	text-align: center;
+	filter: none;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+@media only screen {
+  .glass h1 {
+    -ms-filter: "none";
+  }
 }
