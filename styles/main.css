@@ -10,7 +10,6 @@ html, body {
 	padding: 0;
 }
 body {
-	padding-bottom: 60px; /* Height of the footer */
 	color: #FFFFFF;
 	font-family: "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	background-color: #140d05;
@@ -88,7 +87,6 @@ footer {
     width: 100%;
 	display: block;
     margin: 0 auto;
-	text-align: center;
 }
 .absolute-center {
   width: 50%;
