@@ -12,7 +12,7 @@ html, body {
 body {
 	padding-bottom: 60px; /* Height of the footer */
 	color: #FFFFFF;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-family: "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	background-color: #140d05;
 }
 #container {
@@ -49,10 +49,17 @@ h2 {
 	margin-left: 2%;
 	float: left;
 }
+#content {
+	position: relative;
+	top: 60px;
+	padding: 30px;
+}
+#content p {
+	text-align: center;
+}
 #body {
-   	padding:10px;
-	padding: 60px;
-  	padding-bottom:60px;   /* Height of the footer */
+	font-size: 16px;
+  	padding-bottom: 60px;   /* Height of the footer */
 }
 footer {
    	position:absolute;
