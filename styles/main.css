@@ -44,6 +44,12 @@ h2 {
 	text-align: center;
 	text-transform: uppercase;
 }
+h3 {
+	font-style: normal;
+	font-weight: 400;
+	font-family: "Walkway_SemiBold", "Calibri Light";
+	text-align: center;
+}
 #main {
 	width: 58%;
 	margin-left: 2%;
@@ -77,6 +83,12 @@ footer {
 .centered {
 	margin-left: auto;
 	margin-right: auto;
+}
+.center-gif {
+    width: 100%;
+	display: block;
+    margin: 0 auto;
+	text-align: center;
 }
 .absolute-center {
   width: 50%;
