@@ -3,7 +3,6 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Photography | Kevin Di Pasupil</title>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -15,7 +14,6 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
-<script src="js/masonry.js"></script>
 <script src="js/lightbox-2.6.min.js"></script>
 <!--[if lte IE 8]>
 
@@ -47,145 +45,162 @@
 	  
 	<div id="content">
     	<h3>Here are some pictures I took...</h3>
+    	
+    	<div class="image-gallery">
         
-		<!-- This will make sure our size stays right when using Masonry -->
-		<div class="grid-sizer"></div>
-
-		<!-- This is what Masonry will tile for you -->
-		<div class="item w2">
-			<img src="images/large_800/sunset_bg_2.jpg" class="image">
-			<a id="image_1" class="overlay" href="images/large_800/sunset_bg_2.jpg" data-lightbox="dslr pics">
-				<h3 class="title">Sunset on the Bay Bridge</h3>
-				<div class="description">
-					<p>
-						Dat sunset~
-					</p>
-				</div>
-			</a>
-		</div>
+			<!-- This will make sure our size stays right when using Masonry -->
+			<div class="grid-sizer"></div>
+			<div class="gutter-sizer"></div>
+	
+			<!-- This is what Masonry will tile for you -->
+			<div class="item">
+				<img src="images/medium_450/sunset_bg_2.jpg" class="image">
+				<a class="overlay" href="images/large_800/sunset_bg_2.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Sunset on the Bay Bridge</h3>
+					<div class="description"><p>Dat sunset~</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/vegas_bg.jpg" class="image">
+				<a class="overlay" href="images/large_800/vegas_bg.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Street on the Strip</h3>
+					<div class="description"><p>Da strippp</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/taiwan_xiaobitan_water.jpg" class="image">
+				<a class="overlay" href="images/large_800/taiwan_xiaobitan_water.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Lampost near the Water</h3>
+					<div class="description"><p>Like something out of a Ghibli film</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_churami_butterflies.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_churami_butterflies.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Churami Butterflies</h3>
+					<div class="description"><p>Fly butterfly, fly!</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/berkeley_bridge.jpg" class="image">
+				<a class="overlay" href="images/large_800/berkeley_bridge.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Berkeley Bridge</h3>
+					<div class="description"><p>The nature side of Berkeley</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/hong_kong_skyline_night.jpg" class="image">
+				<a class="overlay" href="images/large_800/hong_kong_skyline_night.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Hong Kong Lights</h3>
+					<div class="description"><p>The buildings lit up to music</p></div>
+				</a>
+			</div>
+			<div class="item w2">
+				<img src="images/large_800/japan_churami_whale_shark.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_churami_whale_shark.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Jinbei Zame = Whale Shark</h3>
+					<div class="description"><p>Whale sharks are huge!</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_disneyland.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_disneyland.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Tokyo Disneyland</h3>
+					<div class="description"><p>Can there be more than one "happiest place on earth"?</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_fushimi_inari.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_fushimi_inari.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Fushimi Inari Gates</h3>
+					<div class="description"><p>Tunnels of gates upon gates</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_harajuku.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_harajuku.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Takeshita Street</h3>
+					<div class="description"><p>Harajuku on a Sunday</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_harajuku_shrine.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_harajuku_shrine.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Prayers</h3>
+					<div class="description"><p>Meiji Shrine in Harajuku</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_mt_fuji_pigeons.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_mt_fuji_pigeons.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Feeding the Pigeons</h3>
+					<div class="description"><p>Feeding roosters too</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_nara_deer.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_nara_deer.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Lazy Deer</h3>
+					<div class="description"><p>Sleepy deer are easy to take pictures of</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_odaiba_gundam.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_odaiba_gundam.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Life-Sized Gundam</h3>
+					<div class="description"><p>"IT'S A GUNDAM!!!"</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_shibuya.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_shibuya.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Streets of Shibuya</h3>
+					<div class="description"><p>Shop shop shop in Shibuya</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_sky_tower_ghibli.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_sky_tower_ghibli.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Ghibli Store</h3>
+					<div class="description"><p>The best alternative to the Ghibli Museum</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_tsukiji_crab.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_tsukiji_crab.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Tsukiji Crab</h3>
+					<div class="description"><p>Delicious, delicious looking crab</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/sierra_lodge_snow.jpg" class="image">
+				<a class="overlay" href="images/large_800/sierra_lodge_snow.jpg" data-lightbox="dslr pics">
+					<h3 class="title">In the Snow</h3>
+					<div class="description"><p>It looks like a tiny Christmas tree!</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/taiwan_bread_fortress.jpg" class="image">
+				<a class="overlay" href="images/large_800/taiwan_bread_fortress.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Strawberry Brick Toast</h3>
+					<div class="description"><p>Taiwanese bread fortress!</p></div>
+				</a>
+			</div>
+			<div class="item">
+				<img src="images/medium_450/japan_tokyo_tower.jpg" class="image">
+				<a class="overlay" href="images/large_800/japan_tokyo_tower.jpg" data-lightbox="dslr pics">
+					<h3 class="title">Tokyo Tower</h3>
+					<div class="description"><p>NOT an orange Eiffel Tower</p></div>
+				</a>
+			</div>
 		
-		<div class="item">
-			<img src="images/medium_450/vegas_bg.jpg" class="image">
-			<a id="image_1" class="overlay" href="images/large_800/vegas_bg.jpg" data-lightbox="dslr pics">
-				<h3 class="title">Street on the Strip</h3>
-				<div class="description">
-					<p>
-						Da strippp
-					</p>
-				</div>
-			</a>
-		</div>
-		
-		
-		<div class="item">
-
-			<!-- An image, of course! -->
-			<img src="http://placekitten.com/1050/750" class="image">
-
-			<!-- This is the overlay for the hover -->
-			<a class="overlay" href="#">
-				<h3 class="title">Some title</h3>
-				<div class="description">
-					<p>
-						Lorem ipsum dolor sit amet, <br>
-						consectetur adipisicing elit.
-					</p>
-				</div>
-			</a>
-		</div>
-		
-		
-		<div class="item">
-
-			<!-- An image, of course! -->
-			<img src="http://placekitten.com/650/550" class="image">
-
-			<!-- This is the overlay for the hover -->
-			<a class="overlay" href="#">
-				<h3 class="title">Some title</h3>
-				<div class="description">
-					<p>
-						Lorem ipsum dolor sit amet, <br>
-						consectetur adipisicing elit.
-					</p>
-				</div>
-			</a>
-		</div>
-		
-		
-		<div class="item">
-
-			<!-- An image, of course! -->
-			<img src="http://placekitten.com/450/550" class="image">
-
-			<!-- This is the overlay for the hover -->
-			<a class="overlay" href="#">
-				<h3 class="title">Some title</h3>
-				<div class="description">
-					<p>
-						Lorem ipsum dolor sit amet, <br>
-						consectetur adipisicing elit.
-					</p>
-				</div>
-			</a>
-		</div>
-		<div class="item">
-
-			<!-- An image, of course! -->
-			<img src="http://placekitten.com/450/250" class="image">
-
-			<!-- This is the overlay for the hover -->
-			<a class="overlay" href="#">
-				<h3 class="title">Some title</h3>
-				<div class="description">
-					<p>
-						Lorem ipsum dolor sit amet, <br>
-						consectetur adipisicing elit.
-					</p>
-				</div>
-			</a>
-		</div>
-		
-		<div class="item">
-
-			<!-- An image, of course! -->
-			<img src="http://placekitten.com/450/150" class="image">
-
-			<!-- This is the overlay for the hover -->
-			<a class="overlay" href="#">
-				<h3 class="title">Some title</h3>
-				<div class="description">
-					<p>
-						Lorem ipsum dolor sit amet, <br>
-						consectetur adipisicing elit.
-					</p>
-				</div>
-			</a>
-		</div>
-		
-		<div class="item">
-
-			<!-- An image, of course! -->
-			<img src="http://placekitten.com/550/550" class="image">
-
-			<!-- This is the overlay for the hover -->
-			<a class="overlay" href="#">
-				<h3 class="title">Some title</h3>
-				<div class="description">
-					<p>
-						Lorem ipsum dolor sit amet, <br>
-						consectetur adipisicing elit.
-					</p>
-				</div>
-			</a>
-		</div>
-        
+        </div>
 	</div>
   
+</div>
+
   <footer>
     <p>&copy; Kevin Di Pasupil 2014</p>
   </footer>
-</div>
-
 </body>
 </html>

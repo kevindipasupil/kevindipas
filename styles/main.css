@@ -59,6 +59,9 @@ h3 {
 	top: 60px;
 	padding: 30px;
 }
+#content h3 {
+	padding: 10px;
+}
 #content p {
 	text-align: center;
 }
@@ -170,6 +173,14 @@ article, aside, figure, footer, header, nav {
 	display: block;
 }
 
+/* Image Gallery */
+.image-gallery {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	position: relative;
+}
 
 /* Blur Effect */
 .blur {
