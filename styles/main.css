@@ -57,17 +57,15 @@ h3 {
 #content {
 	position: relative;
 	top: 60px;
-	padding: 30px;
+	padding: 10px;
+	font-size: 16px;
+  	padding-bottom: 60px;   /* Height of the footer */
 }
 #content h3 {
 	padding: 10px;
 }
 #content p {
 	text-align: center;
-}
-#body {
-	font-size: 16px;
-  	padding-bottom: 60px;   /* Height of the footer */
 }
 footer {
    	position:absolute;
@@ -175,11 +173,10 @@ article, aside, figure, footer, header, nav {
 
 /* Image Gallery */
 .image-gallery {
-	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	width: 100%;
 	position: relative;
+	max-width: 80%;
 }
 
 /* Blur Effect */

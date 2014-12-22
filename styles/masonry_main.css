@@ -1,21 +1,21 @@
 html {
     overflow-y: scroll;
 }
+.grid-sizer { 
+	width: 20%; 
+}
 .item {
     float: left;
     position: relative;
     line-height: 1em;
     width: 20%; 
- 	margin-bottom: 1%;
+ 	margin-bottom: 7px;
 }
 .item.w2 { 
-	width: 50%; 
-}
-.grid-sizer { 
-	width: 20%; 
+	width: 40%; 
 }
 .gutter-sizer {
-	width: 1%;
+	width: 7px;
 }
 
 @media screen and (max-width: 1224px) {
